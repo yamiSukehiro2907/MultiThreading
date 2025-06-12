@@ -20,8 +20,8 @@ public class Priority extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
-            String a = "a";
-            for(int j = 0 ; j < 10000000 ; j++){
+            String a = "";
+            for(int j = 0 ; j < 10000 ; j++){
                 a += "a";
             }
             System.out.println(Thread.currentThread().getName() + " - Priority: " + Thread.currentThread().getPriority() + "- count: " + i);

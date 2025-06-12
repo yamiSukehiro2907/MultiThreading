@@ -19,6 +19,7 @@ public class Example {
             printStates(list);
             temp.join();
         }
+
     }
 
     private static void printStates(List<ExThread> list) {

@@ -1,4 +1,4 @@
-package Synchronization.Problem;
+package Synchronization.Java_Monitor;
 
 public class MyThread extends Thread {
 

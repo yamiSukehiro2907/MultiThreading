@@ -34,14 +34,13 @@ public class ReadWriteCounter {
         }
     }
 
-    private int getCount() {
+    private void getCount() {
         readLock.lock();
         try {
             System.out.println(Thread.currentThread().getName() + " read : " + this.count);
         } finally {
             readLock.unlock();
         }
-        return this.count;
     }
 
     public static void main(String[] args) throws InterruptedException {
